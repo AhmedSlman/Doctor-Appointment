@@ -8,12 +8,12 @@ class SearchView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
+    return const DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: MyAppBar(),
         body: Padding(
-          padding: const EdgeInsets.only(right: 44, top: 30, left: 30),
+          padding: EdgeInsets.only(right: 44, top: 30, left: 30),
           child: Column(
             children: [
               Expanded(

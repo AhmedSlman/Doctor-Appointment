@@ -6,9 +6,9 @@ class MyTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TabBar(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         splashBorderRadius: BorderRadius.circular(40),
-        tabs: [
+        tabs: const [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
