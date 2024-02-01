@@ -7,6 +7,7 @@ class MedicineView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+        shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 18.4,

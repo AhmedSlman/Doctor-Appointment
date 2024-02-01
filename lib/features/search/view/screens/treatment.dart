@@ -5,52 +5,57 @@ class TreatMents extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Container(
-        width: 130,
-        height: 119,
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/product_image.png'),
-                fit: BoxFit.cover)),
-      ),
-      const Text(
-        'Accu-check Active\nTest Strip',
-        style: TextStyle(
-          color: Color(0xFF090F47),
-          fontSize: 13,
-          fontFamily: 'Overpass',
-          fontWeight: FontWeight.w400,
-          height: 0.11,
-        ),
-      ),
-      Row(
-        children: [
-          const Text(
-            'Rs.112',
-            style: TextStyle(
-              color: Color(0xFF090F47),
-              fontSize: 16,
-              fontFamily: 'Overpass',
-              fontWeight: FontWeight.w600,
-              height: 0.07,
+    return SizedBox(
+      height: 250,
+      width: 177,
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 174,
+              height: 158,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/product_image.png'),
+                      fit: BoxFit.cover)),
             ),
-          ),
-          Container(
-            width: 54.15,
-            height: 24,
-            decoration: const ShapeDecoration(
-              color: Color(0xFFFFC000),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  bottomLeft: Radius.circular(20),
-                ),
+            const Text(
+              'Accu-check Active\nTest Strip',
+              style: TextStyle(
+                color: Color(0xFF090F47),
+                fontSize: 5,
+                fontFamily: 'Overpass',
+                fontWeight: FontWeight.w400,
               ),
             ),
-          )
-        ],
-      )
-    ]);
+            Row(
+              children: [
+                const Text(
+                  'Rs.112',
+                  style: TextStyle(
+                    color: Color(0xFF090F47),
+                    fontSize: 5,
+                    fontFamily: 'Overpass',
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                Container(
+                  width: 10,
+                  height: 10,
+                  decoration: const ShapeDecoration(
+                    color: Color(0xFFFFC000),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                        bottomRight: Radius.circular(20),
+                      ),
+                    ),
+                  ),
+                )
+              ],
+            )
+          ]),
+    );
   }
 }
