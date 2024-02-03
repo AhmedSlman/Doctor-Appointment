@@ -2,7 +2,6 @@ import 'package:doctor_appointment/features/search/view/screens/medicine_view.da
 import 'package:doctor_appointment/features/search/view/screens/tabs.dart';
 import 'package:doctor_appointment/features/search/view/screens/text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:doctor_appointment/features/search/view/screens/treatment.dart';
 
 class SearchView extends StatefulWidget {
   const SearchView({super.key});
