@@ -1,4 +1,4 @@
-import 'package:doctor_appointment/features/search/view/screens/search_view.dart';
+import 'package:doctor_appointment/features/splash/view/screens/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SearchView(),
+      home: SplashView(),
     );
   }
 }
